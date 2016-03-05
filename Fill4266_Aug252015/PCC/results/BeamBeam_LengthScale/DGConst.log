@@ -46,6 +46,7 @@ graph title 10_Y_2674
 ------>>>>
 Now fitting BCID  sum
 Fit:0: RuntimeWarning: Abnormal termination of minimization.
+Fit:0: RuntimeWarning: Abnormal termination of minimization.
 TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
 graph title 10_Y_sum
 ------>>>>
@@ -71,6 +72,7 @@ graph title 2_Y_2674
 ------>>>>
 Now fitting BCID  sum
 Fit:0: RuntimeWarning: Abnormal termination of minimization.
+Fit:0: RuntimeWarning: Abnormal termination of minimization.
 TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
 graph title 2_Y_sum
 ------>>>>
@@ -95,6 +97,7 @@ TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
 graph title 3_Y_2674
 ------>>>>
 Now fitting BCID  sum
+Fit:0: RuntimeWarning: Abnormal termination of minimization.
 Fit:0: RuntimeWarning: Abnormal termination of minimization.
 TCanvas::Constructor:0: RuntimeWarning: Deleting canvas with same name: c
 graph title 3_Y_sum
