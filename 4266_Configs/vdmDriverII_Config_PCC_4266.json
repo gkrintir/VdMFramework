@@ -2,7 +2,7 @@
 "Fill": "4266",
 "Date": "Aug242015",
 "Luminometer": "PCC",
-"AnalysisDir": "Fill4266_Aug252015",
+"AnalysisDir": "Fill4634_Nov192015",
 "CorrLater" : ["noCorr", "LengthScale", "Ghosts", "Satellites", "BeamBeam"],
 "Corr" : ["BeamBeam"],
 "Corr" : ["noCorr"],
@@ -12,7 +12,7 @@
 "Comment": "Output of following step goes to <AnalysisDir>/LuminometerData",
 "makeRateFile": false,
 "Comment": "Output of following step goes to <AnalysisDir>/cond",
-"makeBeamCurrentFile": false,
+"makeBeamCurrentFile": true,
 "Comment": "Output of following step goes to <AnalysisDir>/corr",
 "makeBeamBeamFile": false,
 "Comment": "Output of following step goes to <AnalysisDir>/corr",
@@ -22,15 +22,15 @@
 "Comment": "Output of following step goes to <AnalysisDir>/<Luminometer>/graphs",
 "makeLengthScaleFile": false,
 "Comment": "Output of following step goes to <AnalysisDir>/corr",
-"makeGraphsFile": true,
+"makeGraphsFile": false,
 "Comment": "Output of following step goes to <AnalysisDir>/corr",
 "makeGraphs2D": false,
 "Comment": "Output of following step goes to <AnalysisDir>/<Luminometer>/results/<Corr>",
-"runVdmFitter": true,
+"runVdmFitter": false,
 "makeScanFileConfig":
   {
-  "InputCentralPath": "/afs/cern.ch/user/c/capalmer/tempeos/cms/store/group/comm_luminosity/VdM/15_08_25/BRILdata",
-  "InputDIPFile" : "/afs/cern.ch/user/c/capalmer/tempeos/cms/store/group/comm_luminosity/VdM/15_08_25/beamPositions/vdm_343bccdf-e950-4c38-943b-db731911dc07.csv",
+  "InputCentralPath": "/afs/cern.ch/user/g/gkrintir/tempeos/cms/store/group/comm_luminosity/VdM/15_08_25/BRILdata",
+  "InputDIPFile" : "/afs/cern.ch/user/g/gkrintir/tempeos/cms/store/group/comm_luminosity/VdM/15_08_25/beamPositions/vdm_343bccdf-e950-4c38-943b-db731911dc07.csv",
   "ScanNames" : ["X1","Y1", "Y2", "X2", "X3", "Y3", "X4", "Y4", "X5", "Y5"],
   "Comment" : "Since X,Y scans are automatically differentiated, a time window can include an X and a Y scan, will still work, timestamp in UTC",
 	"ScanTimeWindows" :[[1440463274,1440464388],[1440464627,1440465733], [1440466014, 1440467085], [1440467318, 1440468386 ], [1440472571,  1440473458 ], [1440473655, 1440474570], [1440474774, 1440475680 ], [1440475865,1440476759 ], [1440478564, 1440479567], [1440479880,1440480952 ]],
@@ -48,17 +48,21 @@
   },
 "makeRateFileConfig":
   {
+  "InputPCCFiles": ["/afs/cern.ch/user/g/gkrintir/github/PCCTools/CMSSW_7_6_1/src/JobsDir/test.root"],
+  "Comment": "BCIDs on which trigger read out PCC values",
+  "PCC_BCID": [644,1215,2269,2389,2589],
+  "AnalysisDir": "../Fill4634_Nov192015",
   "Comment": "The following directories are relative to <AnalysisDir>",
-  "InputScanFile": "cond/Scan_4266.pkl",
-  "InputLumiDir" : "/afs/cern.ch/user/c/capalmer/tempeos/cms/store/group/comm_luminosity/VdM/15_08_25/BRILdata",
-  "RateTable": "bcm1flumi",
-  "OutputSubDir": "LuminometerData"
+  "InputScanFile" : "cond/Scan_4634.pkl",
+  "PCCTreeName": "pccminitree",
+  "OutputSubDir" : "LuminometerData",
+  "addScanInfo": false
   },
 "makeBeamCurrentFileConfig":
   {
   "InputCentralPath": "/afs/cern.ch/user/c/capalmer/tempeos/cms/store/group/comm_luminosity/VdM/15_08_25/BRILdata",
   "Comment": "Input scan file in <AnalysisDir>/<InputScanFile>",
-  "InputScanFile" : "cond/Scan_4266.pkl",
+  "InputScanFile" : "cond/Scan_4634.pkl",
   "OutputSubDir" : "cond",
   "CalibrateFBCTtoDCCT" : false
   },

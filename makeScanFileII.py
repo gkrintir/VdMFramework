@@ -52,7 +52,7 @@ def doMakeScanFile(ConfigInfo):
 
     if not (columnsList == extractedList):
         print "Attention: First line in dip csv file not as expected, check file integrity. Exit program."
-        sys.exit(1)
+        #sys.exit(1)
 
     FillfromDip = df['fill'][0]
 

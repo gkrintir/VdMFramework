@@ -32,7 +32,7 @@ def addScanInfoToTree(chain, inData, intermediateFile):
                       "Int_t fPointIndex;};")
     from ROOT import ScanInfo
     tmp_scan_info = ScanInfo()
-    print tmp_scan_info
+    #print tmp_scan_info
 
     tree_scan_info = r.TTree("tree_scan_info", "tree_scan_info")
     tree_scan_info.Branch("scan_info", tmp_scan_info,
@@ -57,12 +57,13 @@ def addScanInfoToTree(chain, inData, intermediateFile):
                   (100. * index / num_entries, time.strftime("%H:%M:%S", eta))
         timestamp = data.timestamp
 
-        i = None
+        i = Non
         j = None
         scan_point = None
 
         for (i, in_data)  in enumerate(inData):
             time_window = [in_data.tStart[0], in_data.tStop[-1]]
+            #print time_window
             if (timestamp >= time_window[0]) and (timestamp <= time_window[1]):
                 for (j, point) in enumerate(in_data.sp):
 ##                    print in_data.tStart[j], in_data.tStop[j]

@@ -1,4 +1,4 @@
 
 # DO NOT DELETE
-/Users/grothe/lumi/VdM/pylumi/dict/L1Trg_dict_C.so: /Users/grothe/root/include/cintdictversion.h /Users/grothe/root/include/RVersion.h
-L1Trg_dict_C__ROOTBUILDVERSION= 5.34/02
+dict/L1Trg_dict_C.so: /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/RVersion.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/RConfig.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TClass.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TDictAttributeMap.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TInterpreter.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TROOT.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TBuffer.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TMemberInspector.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TError.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/RtypesImp.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TIsAProxy.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TFileMergeInfo.h /afs/cern.ch/cms/lumi/brilconda-1.0.3/root/include/TCollectionProxyInfo.h
+L1Trg_dict_C__ROOTBUILDVERSION= 5.99/05
